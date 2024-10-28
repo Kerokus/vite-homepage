@@ -1,0 +1,78 @@
+.top-header {
+  font-size: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-title {
+  font-size: 3vw;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.title-text h3 {
+  font-weight: lighter;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: #a77dfc;
+  border-radius: 1.5em;
+  height: auto; /* Let the height adjust */
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* General link styles */
+.nav a {
+  color: #a77dfc;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em; /* Adjust padding for smaller screens */
+}
+
+/* Hover effects */
+.nav a.nonActive:hover {
+  background-color: #a77dfc;
+  color: black;
+}
+
+.nav a.active {
+  color: black;
+  background-color: #a77dfc;
+}
+
+/* Round the first and last elements */
+.nav > a:first-of-type:hover,
+.nav > a.active:first-of-type {
+  background-color: #a77dfc;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.nav > a:last-of-type:hover,
+.nav > a.active:last-of-type {
+  background-color: #a77dfc;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+/* Media query to handle smaller screens */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Make the Navbar stack if the window shrinks */
+    max-height: auto;
+  }
+
+  .nav a {
+    padding: 0.5em; /* Reduce padding on smaller screens */
+    font-size: 1em; /* Reduce font size to fit better */
+  }
+}

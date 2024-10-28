@@ -1,0 +1,144 @@
+/* Load Overpass-Regular */
+@font-face {
+  font-family: "Overpass";
+  src: url("/fonts/Overpass-Regular.ttf") format("truetype");
+  font-weight: 400; 
+  font-style: normal;
+}
+
+/* Load Overpass-Bold */
+@font-face {
+  font-family: "Overpass";
+  src: url("/fonts/Overpass-Bold.ttf") format("truetype");
+  font-weight: 700; 
+  font-style: normal;
+}
+
+/* Load Overpass-Italic */
+@font-face {
+  font-family: "Overpass";
+  src: url("/fonts/Overpass-Italic.ttf") format("truetype");
+  font-weight: 400; 
+  font-style: italic;
+}
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  background-color: #16181d;
+  color: #bbbdc3;
+}
+
+body {
+  padding: 1.5em;
+  font-family: "Overpass", sans-serif;
+  overflow: hidden; 
+}
+
+main {
+  height: 100vh;
+  overflow: auto;
+}
+
+.home-image-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-image-container img {
+  display: block; /* Make the image a block-level element */
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.page-container {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.capabilities-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.cap1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cap1 .column {
+  width: 33.33%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr; 
+  padding: 10px;
+}
+
+.cap1 .column .cap-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns text content to the top */
+  text-align: center;
+  min-height: 100px; 
+}
+
+.cap1 .column .tasks-header {
+  text-align: center;
+}
+
+.cap1 .column .list ul,
+.cap1 .column .tasks-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cap1 .column .list,
+.cap1 .column .tasks-list {
+  display: flex;
+}
+
+.cap1 .column .list ul,
+.cap1 .column .tasks-list ul {
+  align-self: flex-start;
+}
+
+.cap2,
+.cap3 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cap2 img,
+.cap3 img {
+  display: block; /* Make the image a block-level element */
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.cap3 {
+  margin-top: 5rem;
+  margin-bottom: 35vh;
+}
+
+.analysis-support {
+  color: rgb(80, 219, 224);
+}
+
+.intelligence-workflow {
+  color: rgb(213, 167, 58);
+}
+
+.application-development {
+  color: rgb(25, 197, 135);
+}
