@@ -48,10 +48,10 @@ main {
 }
 
 .home-image-container img {
-  display: block; /* Make the image a block-level element */
+  display: block;
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image horizontally */
+  height: auto; 
+  margin: 0 auto; 
 }
 
 .page-container {
@@ -65,7 +65,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content horizontally */
+  align-items: center; 
 }
 
 .cap1 {
@@ -84,7 +84,7 @@ main {
 .cap1 .column .cap-header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Aligns text content to the top */
+  justify-content: flex-start; 
   text-align: center;
   min-height: 100px; 
 }
@@ -120,10 +120,10 @@ main {
 
 .cap2 img,
 .cap3 img {
-  display: block; /* Make the image a block-level element */
+  display: block; 
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image horizontally */
+  height: auto; 
+  margin: 0 auto; 
 }
 
 .cap3 {
